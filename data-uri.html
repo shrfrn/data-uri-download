@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/49cdaa1449.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="css/styles.css">
+    <title>Data URL/URI</title>
+</head>
+<body>
+    <h1>Downloading content using <span>data-uri's</span></h1>
+    <p>We can use an HTML anchor tag's <span>href</span> attribute, to dynamically create data and download it </p>
+    <p>So this code snippet:</p>
+
+    <img src="img/data-uri-1.png" alt="">
+
+    <p>So when we click the link, a file with the text <span>"ABCD"</span> will be downloaded. Try it.</p>
+    <a href="data:text,ABCD" download>download</a>
+
+    <ul>
+        <li>The <span>data:</span> prefix tells the browser this is a url</li>
+        <li>Following the colon : is one of a few allowed types of content such as <span>text</span> or <span>image</span></li>
+        <li>There is also an option to specify a sub-type, for example <span>text/csv</span> or <span>image/gif</span></li>
+        <li>Other options are also available and are placed after a semicolon ; for example <span>data:image/gif;base64,</span></li>
+    </ul>
+    <nav>
+        <button class="btn-prev"><a href="downloading.html"><i class="fa-solid fa-angle-left"></i></a></button>
+        <button class="btn-next"><a href="dynamic-data-uri.html"><i class="fa-solid fa-angle-right"></i></a></button>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+}
+
+body > a {
+    display: block;
+    padding: 1em;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    text-wrap: balance;
+    margin-block-end: 60px;
+}
+
+h1 span {
+    color: lightgray;
+    font-family: monospace;
+}
+
+p span {
+    font-family: monospace;
+    font-size: 1.3em;
+    color: rgb(133, 190, 221);
+    font-weight: bold;
+}
+
+pre {
+    padding: 1em;
+    background-color: whitesmoke;
+    font-size: 1.2em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin-block-end: 10px;
+}
+
+li {
+    margin-block-end: 1em;
+}
+
+li:first-of-type {
+    margin-block-start: 2em;
+}
+
+li span {
+    padding-inline: 3px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 3px;
+    font-style: italic;
+}
+
+nav button {
+    position: fixed;
+    top: 50%;
+    translate: 0 -50%;
+
+    width: 70px;
+    height: 70px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+
+    opacity: .4;
+    transition: opacity 400ms;
+
+    color: gray;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+nav button:hover {
+    opacity: 1;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}

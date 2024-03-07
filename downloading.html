@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/49cdaa1449.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Downloading Files</title>
+</head>
+<body>
+    <h1>Downloading files using <span>&lt;a&gt;</span> tags</h1>
+    <p>When an HTML anchor tag has the <span>download</span> attribute, it will download the target instead of navigating to it.</p>
+    <p>So this code snippet:</p>
+
+    <img src="img/code.png" alt="">
+
+    <p>... will look like this: </p>
+    <a href="data/hello.txt" download>click here</a>
+    <p>...and when it's clicked, the file will be downloaded</p>
+
+    <ul>
+        <li>You can specify a file name. If you don't, the original file's name will be used</li>
+        <li>The downloaded rescource needs to be from the same origin as the initiator.</li>
+        <li>Files can only be downloaded to your <span>downloads</span> folder.</li>
+    </ul>
+    <nav>
+        <button class="btn-next"><a href="data-uri.html"><i class="fa-solid fa-angle-right"></i></a></button>
+    </nav>
+</body>
+</html>

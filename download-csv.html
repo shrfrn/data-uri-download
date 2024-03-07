@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/49cdaa1449.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="css/styles.css">
+    <title>Download CSV</title>
+</head>
+<body>
+    <h1>Generating and Downloading a CSV File</h1>
+    <p>Let's use a data-uri to download our array as a CSV file. Here is our array:</p>
+
+    <img src="img/users.png" alt="">
+    <p>When the link is clicked, the <span>getCSV()</span> function is activated. It builds a CSV string for the array and modifies the anchor's <span>href</span> attribute to include it as a data-uri.</p>
+    <img src="img/get-csv.png" alt="">
+
+    <a href="#" download="users.csv"
+        onclick="getCSV(this)">download CSV</a>
+
+    <script src="js/dowload-csv.js"></script>
+    <nav>
+        <button class="btn-prev"><a href="dynamic-data-uri.html"><i class="fa-solid fa-angle-left"></i></a></button>
+    </nav>
+</body>
+</html>
