@@ -1,91 +1,95 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
 }
 
 body {
-    max-width: 600px;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.4em;
+	max-width: 600px;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
 }
 
 body > a {
-    display: block;
-    padding: 1em;
-    background-color: whitesmoke;
+	display: block;
+	padding: 1em;
+	background-color: whitesmoke;
 }
 
 h1 {
-    text-align: center;
-    text-wrap: balance;
-    margin-block-end: 60px;
+	text-align: center;
+	text-wrap: balance;
+	margin-block-end: 60px;
 }
 
 h1 span {
-    color: lightgray;
-    font-family: monospace;
+	color: lightgray;
+	font-family: monospace;
 }
 
 p span {
-    font-family: monospace;
-    font-size: 1.3em;
-    color: rgb(133, 190, 221);
-    font-weight: bold;
+	font-family: monospace;
+	font-size: 1.3em;
+	color: rgb(133, 190, 221);
+	font-weight: bold;
 }
 
 pre {
-    padding: 1em;
-    background-color: whitesmoke;
-    font-size: 1.2em;
+	padding: 1em;
+	background-color: whitesmoke;
+	font-size: 1.2em;
 }
 
 img {
-    display: block;
-    width: 100%;
-    margin-block-end: 10px;
+	display: block;
+	width: 100%;
+	margin-block-end: 10px;
 }
 
 li {
-    margin-block-end: 1em;
+	margin-block-end: 1em;
 }
 
 li:first-of-type {
-    margin-block-start: 2em;
+	margin-block-start: 2em;
 }
 
 li span {
-    padding-inline: 3px;
-    background-color: rgb(240, 240, 240);
-    border-radius: 3px;
-    font-style: italic;
+	padding-inline: 3px;
+	background-color: rgb(240, 240, 240);
+	border-radius: 3px;
+	font-style: italic;
 }
 
 nav button {
-    position: fixed;
-    top: 50%;
-    translate: 0 -50%;
+	position: fixed;
+	top: 50%;
+	translate: 0 -50%;
 
-    width: 70px;
-    height: 70px;
-    border: 1px solid lightgray;
-    border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	border: 1px solid lightgray;
+	border-radius: 50%;
 
-    opacity: .4;
-    transition: opacity 400ms;
+	opacity: 0.4;
+	transition: opacity 400ms;
 
-    color: gray;
-    font-size: 2em;
-    cursor: pointer;
+	color: gray;
+	font-size: 2em;
+	cursor: pointer;
 }
 
 nav button:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 .btn-prev {
-    left: 10px;
+	left: 10px;
 }
 
 .btn-next {
-    right: 10px;
+	right: 10px;
 }
